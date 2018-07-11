@@ -1,0 +1,37 @@
+jquery是一个Javascript库
+jQuery 库位于一个 JavaScript 文件中，其中包含了所有的 jQuery 函数。
+通过下面的标记把jquery加到页面中
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+如果您不愿意在自己的计算机上存放 jQuery 库，那么可以从 Google 或 Microsoft 加载 CDN jQuery 核心文件。
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+</head>
+<head>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+</head>
+
+所有jquery都位于一个 document ready 函数中：
+$(document).ready(function(){
+
+--- jQuery functions go here ----
+
+});
+这是为了防止文档在完全加载（就绪）之前运行 jQuery 代码。
+
+基础语法是：$(selector).action()
+*美元符号定义 jQuery
+*选择符（selector）“查询”和“查找” HTML 元素
+*jQuery 的 action() 执行对元素的操作
+
+补：
+jQuery 名称冲突
+jQuery 使用 $ 符号作为 jQuery 的简介方式。
+某些其他 JavaScript 库中的函数（比如 Prototype）同样使用 $ 符号。
+jQuery 使用名为 noConflict() 的方法来解决该问题。
+var jq=jQuery.noConflict()，帮助您使用自己的名称（比如 jq）来代替 $ 符号。
+
+选择器：http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp
