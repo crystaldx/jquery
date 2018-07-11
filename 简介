@@ -35,3 +35,4 @@ jQuery 使用名为 noConflict() 的方法来解决该问题。
 var jq=jQuery.noConflict()，帮助您使用自己的名称（比如 jq）来代替 $ 符号。
 
 选择器：http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp
+事件选择器：http://www.w3school.com.cn/jquery/jquery_ref_events.asp
